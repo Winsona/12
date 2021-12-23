@@ -1,6 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import {HashRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Blockdetails from './components/Blockdetails.js'
+import PaymentDetails from './components/PaymentDetails.js'
+import CustomerDetails from './components/CustomerDetails.js'
+
 
 
 
@@ -63,10 +66,4 @@ function Home() {
   return <h2>Home</h2>
 }
 
-function CustomerDetails(){
-  return <h2>Customers Details</h2>
-}
-function PaymentDetails() {
-  return <h2>Payment Details</h2>
-}
 
