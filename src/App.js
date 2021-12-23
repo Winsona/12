@@ -3,7 +3,7 @@ import {HashRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Blockdetails from './components/Blockdetails.js'
 import PaymentDetails from './components/PaymentDetails.js'
 import CustomerDetails from './components/CustomerDetails.js'
-
+import Home  from "./components/Home.js";
 
 
 
@@ -62,8 +62,5 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>
-}
 
 
