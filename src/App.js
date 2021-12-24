@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import {HashRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Blockdetails from './components/Blockdetails.js'
 import PaymentDetails from './components/PaymentDetails.js'
 import CustomerDetails from './components/CustomerDetails.js'
 import Home  from "./components/Home.js";
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -48,6 +49,9 @@ export default function App() {
                     <Route path="/PaymentDetails">
                       <PaymentDetails />
                     </Route>
+                    <Route path="/Blockdetails/:id">
+                      <Blockdetail />
+                    </Route>
                     <Route path="/Blockdetails">
                       <Blockdetails />
                     </Route>
@@ -62,5 +66,9 @@ export default function App() {
   );
 }
 
+function Blockdetail(){
+  let {id} = useParams();
 
+  return <h2>Flat no: {id}</h2>
+}
 
